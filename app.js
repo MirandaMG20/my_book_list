@@ -7,7 +7,6 @@ class Book {
     }
 }
 
-
 // UI Class: Handle UI Tasks
 class UI {
     static displayBooks() {
@@ -71,7 +70,6 @@ class UI {
     }
 }
 
-
 // Store Class: Handles Storage
 class Store {
     static getBooks() {
@@ -108,7 +106,6 @@ class Store {
 // Event: Display Books
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
 
-
 // Event: Add a Book
 document.querySelector('#book-form').addEventListener('submit', (e) => {
     // Prevent actual submit
@@ -144,7 +141,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) => {
 // Event: Remove a Book
 document.querySelector('#book-list').addEventListener('click', (e) => {
     // Remove book from UI
-    UI.deleteBook(e.target)
+    UI.deleteBook(e.target);
     // console.log(e.target)
 
     // Remove book from store 
